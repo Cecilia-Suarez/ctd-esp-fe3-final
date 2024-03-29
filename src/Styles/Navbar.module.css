@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    width: 80vw;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(136, 136, 136);
+}

@@ -7,6 +7,16 @@ const Form = () => {
   return (
     <div>
       <form>
+        <input type="text" placeholder="Full name"/>
+
+        <input type="text" placeholder="Telephone" />
+
+        <input type="email" placeholder="Email"/>
+
+        <input type="text" placeholder="Your questions" />
+
+        <button>Sumbit</button>
+
       </form>
     </div>
   );
