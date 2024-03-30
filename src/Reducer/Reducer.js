@@ -3,12 +3,12 @@ export const reducer = (state, action) => {
         case 'GET_CHARACTERS':
             return {...state, list: action.payload}
         case 'ADD_FAV':
-            return {}
+            return {...state, favs: [...state.favs, action.payload]}
         case 'CHANGE_THEME':
             return {}
         //OPCIONALES:    
-        case 'GET-CHARACTER': //obtener el detalle
-            return {}
+        case 'GET_CHARACTER': //obtener el detalle
+            return {...state, dentistDetail: action.payload}
         case 'DELETE_FAV':
             return {}
     }
