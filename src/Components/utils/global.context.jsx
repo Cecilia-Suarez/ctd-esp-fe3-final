@@ -3,9 +3,9 @@ import axios from 'axios';
 import { reducer } from "../../Reducer/Reducer";
 
 
-const ContextGlobal = createContext(); //✔️
+const ContextGlobal = createContext(); 
 
-const initialState = { //✔️
+const initialState = { 
   list: [],
   favs: JSON.parse(localStorage.getItem('favs')) || [],
   theme: "",
@@ -26,8 +26,8 @@ const ContextProvider = ({ children }) => {
   }, [])
 
   useEffect(() => {
-    localStorage.setItem('favs', JSON.stringify(state.favs))
-  }, [state.favs]) //Aqui debería limitar para que no se repita los favs.
+    localStorage.setItem('favs', JSON.stringify(favs))
+  }, [favs]) 
 
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
 

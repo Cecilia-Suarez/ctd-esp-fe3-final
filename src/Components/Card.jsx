@@ -14,15 +14,15 @@ const Card = ({ dentist }) => {
   const findFav = favs.find((fav => fav.id == dentist.id))
   console.log(findFav);
 
-  const addFav = () => {
+  const addOrRemoveFav = () => {
     if (findFav){
-      alert('Este personaje ya está agregado a favoritos.')
+      dispatch({ type: 'DELETE_FAV', payload: dentist.id });
+      console.log({id} + 'Removido');
     } else {
       dispatch({type: 'ADD_FAV', payload: dentist})
+      console.log({id} + 'Agregado');
     }
   }
-
-  
 
   return (
     <div className={cardStyle.card}>
@@ -31,10 +31,7 @@ const Card = ({ dentist }) => {
         <h4>{name}</h4>
         <h4>{username}</h4>
       </Link>
-
-
-      {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-      <button onClick={addFav} className={cardStyle.favButton}>{findFav ? '🌟' : '⭐'}</button>
+      <button onClick={addOrRemoveFav} className={cardStyle.favButton}>{findFav ? '❤️' : '🤍'}</button>
     </div>
   );
 };
