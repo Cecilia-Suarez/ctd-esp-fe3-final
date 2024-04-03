@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blueviolet;
+  
 }
 
 code {
@@ -45,10 +47,13 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
+
+
+.dark {
   background-color: #12121296;
   color: white;
 }
-.dark > a {
+
+.dark>a {
   color: white;
 }

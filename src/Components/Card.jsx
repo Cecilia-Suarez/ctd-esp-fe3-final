@@ -17,10 +17,8 @@ const Card = ({ dentist }) => {
   const addOrRemoveFav = () => {
     if (findFav){
       dispatch({ type: 'DELETE_FAV', payload: dentist.id });
-      console.log({id} + 'Removido');
     } else {
       dispatch({type: 'ADD_FAV', payload: dentist})
-      console.log({id} + 'Agregado');
     }
   }
 
