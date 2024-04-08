@@ -6,3 +6,8 @@
 .dark>a {
     color: white;
 }
+
+.light {
+    background-color: violet;
+    color: orange
+  }

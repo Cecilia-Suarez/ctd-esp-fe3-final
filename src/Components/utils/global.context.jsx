@@ -1,8 +1,8 @@
 import { createContext, useContext, useReducer, useEffect } from "react";
 import axios from 'axios';
 import { reducer } from "../../Reducer/Reducer";
-import lightTheme from '../../index.css' //puedo importar index sin ser module?
-import darkTheme from '../../index.css'
+import lightTheme from '../../Styles/Theme.module.css'
+import darkTheme from '../../Styles/Theme.module.css'
 
 
 const ContextGlobal = createContext();
@@ -10,14 +10,14 @@ const ContextGlobal = createContext();
 const initialState = {
   list: [],
   favs: JSON.parse(localStorage.getItem('favs')) || [],
-  theme: lightTheme,
+  theme: lightTheme.light,
   dentistDetail: {}
 }
 
 const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  const { list, favs, theme, dentistDetail, isDarkTheme } = state
+  const { list, favs, theme, dentistDetail } = state
 
   const url = 'https://jsonplaceholder.typicode.com/users'
 
@@ -32,7 +32,7 @@ const ContextProvider = ({ children }) => {
   }, [favs])
 
   const changeTheme = (theme) => {
-    dispatch({ type: 'CHANGE_THEME', payload: theme ? lightTheme : darkTheme.dark });
+    dispatch({ type: 'CHANGE_THEME', payload: theme ? lightTheme.light : darkTheme.dark });
   };
 
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo

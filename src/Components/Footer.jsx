@@ -10,12 +10,17 @@ import footerStyle from '../Styles/Footer.module.css'
 const Footer = () => {
   return (
     <footer className={footerStyle}>
+      <div>
         <p>Powered by</p>
         <img src={dhLogo} alt="dh-logo" />
+      </div>
+
+      <div>
         <img src={facebookLogo} alt="facebook-logo" />
         <img src={instagramLogo} alt="instagram-logo" />
         <img src={tikTokLogo} alt="toktok-logo" />
         <img src={whatsappLogo} alt="whatsapp-logo" />
+      </div>
     </footer>
   )
 }
