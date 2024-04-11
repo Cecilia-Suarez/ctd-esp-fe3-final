@@ -8,7 +8,7 @@ export const reducer = (state, action) => {
             return { ...state, theme: action.payload };
         //OPCIONALES:    
         case 'GET_CHARACTER': //✔️
-            return {...state, dentistDetail: action.payload}
+            return {...state, dentistDetail: action.payload, currentDentistIndex: state.list.findIndex(dentist => dentist.id === action.payload.id) };
         case 'DELETE_FAV': //✔️
             return {...state, favs: state.favs.filter(fav => fav.id !== action.payload)}
     }

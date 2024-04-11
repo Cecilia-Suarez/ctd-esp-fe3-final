@@ -11,13 +11,14 @@ const initialState = {
   list: [],
   favs: JSON.parse(localStorage.getItem('favs')) || [],
   theme: lightTheme.light,
-  dentistDetail: {}
+  dentistDetail: {},
+  currentDentistIndex: 0,
 }
 
 const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  const { list, favs, theme, dentistDetail } = state
+  const { list, favs, theme, dentistDetail, currentDentistIndex } = state
 
   const url = 'https://jsonplaceholder.typicode.com/users'
 
@@ -42,7 +43,7 @@ const ContextProvider = ({ children }) => {
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
 
   return (
-    <ContextGlobal.Provider value={{ list, favs, dispatch, theme, dentistDetail, changeTheme }}>
+    <ContextGlobal.Provider value={{ list, favs, dispatch, theme, dentistDetail, changeTheme, currentDentistIndex }}>
       {children}
     </ContextGlobal.Provider>
   );

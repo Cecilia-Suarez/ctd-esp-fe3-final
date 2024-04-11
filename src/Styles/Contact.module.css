@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    background-color: #e5e4e4ef;
+    padding: 50px 100px
+}
+
+form>label,
+input {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 24pt;
+}
+
+form>input {
+    margin-bottom: 24pt;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px
+}
+
+form>input:focus {
+    border: 1px solid #6bd4b1
+}
+
+form>button{
+    background-color: white;
+    width: 90px;
+    transition: .2s all ease-in-out;
+    align-self: center;
+    border: none;
+    padding: 10px;
+}
+
+form>button:hover{
+    background-color: black;
+    color: white;
+}
+
