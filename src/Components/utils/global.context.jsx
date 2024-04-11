@@ -25,14 +25,18 @@ const ContextProvider = ({ children }) => {
     axios(url)
       //.then(response => console.log(response.data))
       .then(response => dispatch({ type: 'GET_CHARACTERS', payload: response.data }))
+      
   }, [])
 
   useEffect(() => {
     localStorage.setItem('favs', JSON.stringify(favs))
   }, [favs])
 
-  const changeTheme = (theme) => {
-    dispatch({ type: 'CHANGE_THEME', payload: theme ? lightTheme.light : darkTheme.dark });
+  const changeTheme = () => {
+    dispatch({
+      type: 'CHANGE_THEME', payload: theme
+        == lightTheme.light ? darkTheme.dark : lightTheme.light
+    });
   };
 
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo

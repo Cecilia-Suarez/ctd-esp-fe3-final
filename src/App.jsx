@@ -5,11 +5,13 @@ import Home from "./Pages/Home";
 import Favs from "./Pages/Favs";
 import Detail from "./Pages/Detail";
 import Contact from "./Pages/Contact"
+import { useContextGlobal } from './Components/utils/global.context'
 
 
 function App() {
+  const { theme } = useContextGlobal();
   return (
-    <div className="App">
+    <div className={theme}>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

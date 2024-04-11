@@ -24,12 +24,13 @@ const Card = ({ dentist }) => {
 
   return (
     <div className={cardStyle.card}>
+      <button onClick={addOrRemoveFav} className={cardStyle.favButton}>{findFav ? '❤️' : '🤍'}</button>
       <Link to={'/detail/' + id} >
-        {/*<img src={doctor} alt="" className={cardStyle.img}/>*/}
+        <img src={doctor} alt="" className={cardStyle.img}/>
         <h4>{name}</h4>
         <h4>{username}</h4>
       </Link>
-      <button onClick={addOrRemoveFav} className={cardStyle.favButton}>{findFav ? '❤️' : '🤍'}</button>
+      
     </div>
   );
 };
