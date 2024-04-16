@@ -29,16 +29,16 @@ const Form = () => {
     <div>
       {!show &&
         <form onSubmit={handleSumbit}>
-          <label htmlFor="">Full name</label>
+          <label for="fullName">Full name</label>
           <input type="text" required value={user.fullName} onChange={(event) => setUser({ ...user, fullName: event.target.value.trim() })} />
 
-          <label htmlFor="">Thelephone</label>
+          <label for="telephone">Telephone</label>
           <input type="tel" value={user.telephone} onChange={(event) => setUser({ ...user, telephone: event.target.value })} />
 
-          <label htmlFor="">Email</label>
+          <label for="email">Email</label>
           <input type="email" required value={user.email} onChange={(event) => setUser({ ...user, email: event.target.value })} />
 
-          <label htmlFor="" >Your query</label>
+          <label for="query" >Your query</label>
           <input type="text" required value={user.question} onChange={(event) => setUser({ ...user, question: event.target.value })} />
 
           <button>Sumbit</button>

@@ -17,12 +17,11 @@
 
 .cardGrid {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 90vw;
-    height: auto;
     flex-wrap: wrap;
-    margin: 5% auto;
+    gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 100px;
 }
 
 .favButton {

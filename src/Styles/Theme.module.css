@@ -1,13 +1,28 @@
 .dark {
-    background-color: #12121296;
+    background-color: rgba(30,30,30,255);
     color: white;
 }
 
-.dark>a {
+.dark>nav,
+.dark>footer{
+    background-color: rgba(18,18,18,255);;
+}
+
+.dark>nav>div>a,
+.dark>nav>a {
     color: white;
+}
+
+.dark.cardGrid>.card>link{
+    color: aqua;
+}
+
+.dark.containerDetail.containerText{
+    background-color: red;
 }
 
 .light {
     background-color: white;
     color: rgb(5, 5, 5)
 }
+

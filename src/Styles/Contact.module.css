@@ -6,8 +6,10 @@
 }
 
 form {
-    background-color: #e5e4e4ef;
-    padding: 50px 100px
+    background-color: rgba(170,206,222,255);
+    padding: 30px 100px;
+    border-top-left-radius: 20%; 
+    box-shadow: 5px 5px 10px rgb(29, 29, 29);
 }
 
 form>label,
