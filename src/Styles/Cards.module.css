@@ -16,12 +16,17 @@
 }
 
 .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.containerCard{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-    align-content: center;
-    padding-bottom: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
 }
 
 .favButton {

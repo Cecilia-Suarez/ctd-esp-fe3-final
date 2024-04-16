@@ -8,17 +8,10 @@
     background-color: rgba(18,18,18,255);;
 }
 
-.dark>nav>div>a,
-.dark>nav>a {
-    color: white;
-}
+.dark>nav>a{
 
-.dark.cardGrid>.card>link{
-    color: aqua;
-}
-
-.dark.containerDetail.containerText{
-    background-color: red;
+                    color: beige;
+      
 }
 
 .light {
