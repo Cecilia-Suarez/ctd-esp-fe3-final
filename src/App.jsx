@@ -15,7 +15,7 @@ function App() {
   return (
     <div className={theme}>
       <Navbar />
-      <Routes>
+      <Routes >
         <Route path='/' element={<Home />} />
         <Route path='/favs' element={<Favs />} />
         <Route path='/detail/:id' element={<Detail />} />

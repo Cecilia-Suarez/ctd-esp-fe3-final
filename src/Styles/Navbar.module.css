@@ -2,7 +2,7 @@ nav {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -15,16 +15,19 @@ nav>div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 30%;
+    width: 20%;
 }
 
-a {
+nav>div>a, nav>a {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    
 }
 
-a:hover {
+nav>div>a:hover {
     color: rgb(136, 136, 136);
+}
+
+nav button {
+    background-color: red;
 }

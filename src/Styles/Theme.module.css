@@ -1,21 +1,36 @@
+.light{
+    background-color: rgb(234, 5, 5);
+    color: rgb(5, 5, 5)
+}
+
+.dark body {
+    background-color: aqua;
+}
+
+
+
 .dark {
-    background-color: rgba(30,30,30,255);
+    background-color: rgba(30, 30, 30, 255);
     color: white;
 }
 
+
+
 .dark>nav,
-.dark>footer{
-    background-color: rgba(18,18,18,255);;
+.dark>footer {
+    background-color: rgba(18, 18, 18, 255);
 }
 
-.dark>nav>a{
-
-                    color: beige;
-      
+.dark nav div h4,
+.dark div a h4,
+.dark h1 {
+    color: beige;   
 }
 
-.light {
-    background-color: white;
-    color: rgb(5, 5, 5)
+.dark h2, 
+.dark h4 {
+    color: black
 }
+
+
 

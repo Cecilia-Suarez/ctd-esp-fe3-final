@@ -28,32 +28,31 @@ const Detail = () => {
   const navigate = useNavigate()
 
   const handleNext = () => {
-    // Navegar al siguiente dentista en la lista
     const nextIndex = (currentDentistIndex + 1) % list.length;
     navigate(`/detail/${list[nextIndex].id}`);
   };
 
   const handlePrev = () => {
-    // Navegar al siguiente dentista en la lista
     const prevIndex = (currentDentistIndex - 1) % list.length;
     navigate(`/detail/${list[prevIndex].id}`);
   };
 
-
-
   return (
     <>
-      <div >
+      <div>
         <h1>Detail Dentist</h1>
         <div className={detailStyle.containerDetail}>
           <button onClick={handlePrev}>⇦</button>
+
           <img src={doctor} alt="" />
+
           <div className={detailStyle.containerText}>
             <h2>{name} {username}</h2>
             <h4>✉ {email}</h4>
             <h4>☎ {phone}</h4>
             <h4>🌐{website}</h4>
           </div>
+
           <button onClick={handleNext}>⇨</button>
         </div>
       </div>

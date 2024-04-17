@@ -1,3 +1,10 @@
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+
 .card {
     display: flex;
     justify-content: space-around;
@@ -5,6 +12,7 @@
     text-align: center;
     width: 200px;
     padding: 0.5rem 0.5rem 0 0.5rem;
+    position: relative;
 }
 
 .img {
@@ -15,26 +23,16 @@
     z-index: -1;
 }
 
-.cardGrid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.containerCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-
-}
-
 .favButton {
-    padding: 10px;
+    top: 15px;
+    right: 35px;
     border: none;
-    width: 100%;
     cursor: pointer;
     background-color: transparent;
     z-index: 1;
-     
+    position: absolute;
+}
+
+.card a{
+    text-decoration: none;
 }

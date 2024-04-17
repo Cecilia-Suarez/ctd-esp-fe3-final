@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Components/Card";
-import cardGridStyle from '../Styles/Cards.module.css'
+import cardGridStyle from '../Styles/Card.module.css'
 import { useContextGlobal } from "../Components/utils/global.context";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context

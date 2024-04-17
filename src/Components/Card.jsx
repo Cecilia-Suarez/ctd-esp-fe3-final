@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import doctor from '../../public/images/doctor.jpg'
-import cardStyle from '../Styles/Cards.module.css'
+import cardStyle from '../Styles/Card.module.css'
 import { useContextGlobal } from "./utils/global.context";
 
 
@@ -30,7 +30,6 @@ const Card = ({ dentist }) => {
         <h4>{name}</h4>
         <h4>{username}</h4>
       </Link>
-      
     </div>
   );
 };

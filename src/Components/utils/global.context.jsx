@@ -26,7 +26,7 @@ const ContextProvider = ({ children }) => {
     axios(url)
       //.then(response => console.log(response.data))
       .then(response => dispatch({ type: 'GET_CHARACTERS', payload: response.data }))
-      
+
   }, [])
 
   useEffect(() => {
@@ -35,8 +35,7 @@ const ContextProvider = ({ children }) => {
 
   const changeTheme = () => {
     dispatch({
-      type: 'CHANGE_THEME', payload: theme
-        == lightTheme.light ? darkTheme.dark : lightTheme.light
+      type: 'CHANGE_THEME', payload: theme == lightTheme.light ? darkTheme.dark : lightTheme.light
     });
   };
 
