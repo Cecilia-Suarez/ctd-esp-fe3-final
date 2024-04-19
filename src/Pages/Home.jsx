@@ -1,22 +1,20 @@
 import React from 'react'
 import Card from '../Components/Card'
-import { useContextGlobal } from '../Components/utils/global.context'
+import { useContextGlobal } from '../Context/global.context'
 import cardGridStyle from '../Styles/Card.module.css'
-
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+import detailStyle from '../Styles/Detail.module.css'
 
 const Home = () => {
 
   const { list } = useContextGlobal()
 
   return (
-      <div>
-        <h1>Home</h1>
-        <div className={cardGridStyle.cardGrid}>
-          {list.map(dentist => <Card  dentist={dentist} key={dentist.id}/>)}
-        </div>
+    <div className={detailStyle.container}>
+      <h1>Home</h1>
+      <div className={cardGridStyle.cardGrid}>
+        {list.map(dentist => <Card dentist={dentist} key={dentist.id} />)}
       </div>
+    </div>
   )
 }
 

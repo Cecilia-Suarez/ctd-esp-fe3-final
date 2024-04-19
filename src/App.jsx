@@ -4,16 +4,16 @@ import { Routes, Route } from "react-router";
 import Home from "./Pages/Home";
 import Favs from "./Pages/Favs";
 import Detail from "./Pages/Detail";
-import Contact from "./Pages/Contact"
-import { useContextGlobal } from './Components/utils/global.context'
-
+import Contact from "./Pages/Contact";
+import './App.css'
+import { useContextGlobal } from "./Context/global.context";
 
 
 function App() {
-  const { theme } = useContextGlobal();
+  const {theme} = useContextGlobal();
   
   return (
-    <div className={theme}>
+    <div /*style={{background: theme.background, color: theme.font, height: "100vh"}}*/ className={theme} style={{height: "100vh"}}>
       <Navbar />
       <Routes >
         <Route path='/' element={<Home />} />

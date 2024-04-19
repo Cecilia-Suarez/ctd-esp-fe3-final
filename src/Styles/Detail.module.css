@@ -1,9 +1,16 @@
-.containerDetail {
+.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row; 
-    padding: 100px 0px;
+    flex-direction: column; 
+}
+
+.containerDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
 }
 
 .containerDetail>button{

@@ -35,4 +35,9 @@
 
 .card a{
     text-decoration: none;
+    color: black;
+}
+
+.card a:active{
+    color: black;
 }

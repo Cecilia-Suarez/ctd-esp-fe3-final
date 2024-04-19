@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import doctor from '../../public/images/doctor.jpg'
-import { useContextGlobal } from '../Components/utils/global.context'
+import doctor from '../assets/doctor.jpg'
+import { useContextGlobal } from '../Context/global.context'
 import detailStyle from '../Styles/Detail.module.css'
 
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
 
@@ -23,7 +21,6 @@ const Detail = () => {
     axios(url)
       .then(response => dispatch({ type: 'GET_CHARACTER', payload: response.data}))
   }, [id, dispatch])
-
   
   const navigate = useNavigate()
 
@@ -39,7 +36,7 @@ const Detail = () => {
 
   return (
     <>
-      <div>
+      <div className={detailStyle.container}>
         <h1>Detail Dentist</h1>
         <div className={detailStyle.containerDetail}>
           <button onClick={handlePrev}>⇦</button>

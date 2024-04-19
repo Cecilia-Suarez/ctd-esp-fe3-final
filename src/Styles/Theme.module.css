@@ -1,30 +1,27 @@
 .light{
-    background-color: rgb(234, 5, 5);
+    background-color: rgb(255, 255, 255);
     color: rgb(5, 5, 5)
 }
 
-.dark :root {
-    background-color: red;
-}
-
-
-
-.dark {
-    background-color: rgba(30, 30, 30, 255);
+.dark, 
+.dark nav div h4,
+.dark div a h4,
+.dark nav a h1{
+    background-color: #0e0e11;
     color: white;
 }
 
-
-
 .dark>nav,
-.dark>footer {
-    background-color: rgba(18, 18, 18, 255);
+.dark>footer{
+    background-color: #18181b;
 }
 
-.dark nav div h4,
-.dark div a h4,
-.dark h1 {
-    color: beige;   
+.dark>footer{
+    border-top: solid #27272a 1px;
+}
+
+.dark>nav{
+    border-bottom: solid #27272a 1px;
 }
 
 .dark h2, 
@@ -32,5 +29,7 @@
     color: black
 }
 
-
+.dark form{
+    box-shadow: none;
+}
 

@@ -1,14 +1,13 @@
 import React from 'react'
-import dhLogo from '../../public/images/DH.png'
-import facebookLogo from '../../public/images/ico-facebook.png'
-import instagramLogo from '../../public/images/ico-instagram.png'
-import tikTokLogo from '../../public/images/ico-tiktok.png'
-import whatsappLogo from '../../public/images/ico-whatsapp.png'
+import dhLogo from '../assets/DH.png'
+import facebookLogo from '../assets/ico-facebook.png'
+import instagramLogo from '../assets/ico-instagram.png'
+import tikTokLogo from '../assets/ico-tiktok.png'
+import whatsappLogo from '../assets/ico-whatsapp.png'
 import footerStyle from '../Styles/Footer.module.css'
 
 
-const Footer = () => {
-  //REVISAR SI LOS LINK IRIAN CON LINK O CON A 
+const Footer = () => { 
   return (
     <footer className={footerStyle}>
       
