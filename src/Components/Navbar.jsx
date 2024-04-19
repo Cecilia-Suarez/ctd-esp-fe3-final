@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to='/contact'><h4>Contact</h4></Link>
       </div>
       
-      <button onClick={handleChangeTheme}>{theme == lightTheme.light ? '☀️' : '🌙'}</button>
+      <button onClick={handleChangeTheme}>{theme == lightTheme.light ? '🌙' : '☀️'}</button>
     </nav>
   )
 }
