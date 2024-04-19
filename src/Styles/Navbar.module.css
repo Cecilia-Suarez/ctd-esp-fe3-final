@@ -4,10 +4,10 @@ nav {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.313rem 0.313rem rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    background-color: #e5e4e4ef;
-    padding: 10px;
+    background-color: rgb(192, 191, 191);
+    padding: 0.625rem;
     height: 3rem;
 }
 
@@ -19,7 +19,7 @@ nav>div {
 }
 
 nav>div>a, nav>a {
-    color: #000;
+    color: rgba(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
 }

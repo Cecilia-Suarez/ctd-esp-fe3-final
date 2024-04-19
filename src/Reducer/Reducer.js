@@ -10,6 +10,8 @@ export const reducer = (state, action) => {
         case 'GET_CHARACTER': 
             return {...state, dentistDetail: action.payload, currentDentistIndex: state.list.findIndex(dentist => dentist.id === action.payload.id) };
         case 'DELETE_FAV': 
-            return {...state, favs: state.favs.filter(fav => fav.id !== action.payload)}
+            return {...state, favs: state.favs.filter(fav => fav.id !== action.payload)};
+        case 'DELETE_ALL_FAVS':
+            return {...state, favs: state.favs = []}
     }
 }

@@ -2,11 +2,12 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e5e4e4ef;
+    background-color: rgb(192, 191, 191);
     width: 100%;
     bottom: 0;
     height: 3rem;
     position: absolute;
+    box-shadow: 0 -0.313rem 0.313rem rgba(0, 0, 0, 0.1);
 }
 
 img {
@@ -19,16 +20,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 0.625rem 0;
     flex-wrap: wrap;
 }
 
 .socialIcon>img {
-    margin: 0 10px;
+    margin: 0 0.625rem;
     transition: 0.5s;
     width: 2rem;
 }
 
 .socialIcon>img:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
 }

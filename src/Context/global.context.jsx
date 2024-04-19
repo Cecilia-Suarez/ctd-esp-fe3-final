@@ -33,6 +33,8 @@ const ContextProvider = ({ children }) => {
       localStorage.setItem('favs', JSON.stringify(favs))
     }, [favs])
 
+    
+
     const handleChangeTheme = () => {
       dispatch({
         type: 'CHANGE_THEME', payload: theme == lightTheme.light ? darkTheme.dark : lightTheme.light

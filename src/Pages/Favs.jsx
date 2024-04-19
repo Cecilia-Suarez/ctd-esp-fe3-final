@@ -6,7 +6,15 @@ import detailStyle from '../Styles/Detail.module.css'
 
 const Favs = () => {
 
-  const {favs} = useContextGlobal()
+  const {favs, dispatch} = useContextGlobal()
+
+  const deleteFavs = () => {
+    const confirmation = confirm("Are you sure want to delete all favs?")
+    if (confirmation){
+      dispatch({ type: 'DELETE_ALL_FAVS'})
+      console.log("All favs has been deleted");
+    }
+  }
 
   return (
     <div className={detailStyle.container}>
@@ -14,6 +22,7 @@ const Favs = () => {
       <div className={cardGridStyle.cardGrid}>
         {favs.map(fav => <Card dentist={fav} key={fav.id}/>)}
       </div>
+      <button onClick={deleteFavs}>Delete favs</button>
     </div>
   );
 };

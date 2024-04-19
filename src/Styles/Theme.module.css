@@ -1,35 +1,48 @@
 .light{
     background-color: rgb(255, 255, 255);
-    color: rgb(5, 5, 5)
+    color: rgba(0, 0, 0);
 }
 
-.dark, 
+.dark{
+    background-color: rgb(14, 14, 17);
+    color:  rgb(255, 255, 255);
+}
+
 .dark nav div h4,
 .dark div a h4,
-.dark nav a h1{
-    background-color: #0e0e11;
-    color: white;
+.dark nav a h1
+{
+    color:  rgb(255, 255, 255);
 }
 
-.dark>nav,
-.dark>footer{
-    background-color: #18181b;
+.dark nav,
+.dark footer{
+    background-color: rgb(24, 24, 27);
 }
 
-.dark>footer{
-    border-top: solid #27272a 1px;
+.dark footer{
+    border-top: solid rgb(39, 39, 42) 0.063rem;
 }
 
-.dark>nav{
-    border-bottom: solid #27272a 1px;
+.dark nav{
+    border-bottom: solid rgb(39, 39, 42) 0.063rem;
 }
 
 .dark h2, 
-.dark h4 {
-    color: black
+.dark div h4 {
+    color: rgba(0, 0, 0);
+}
+
+.dark div h3{
+    color: white;
 }
 
 .dark form{
     box-shadow: none;
+}
+
+.dark div a,
+.dark nav a{
+    background-color: transparent;
 }
 

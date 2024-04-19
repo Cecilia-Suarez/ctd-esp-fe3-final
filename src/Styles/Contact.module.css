@@ -6,32 +6,32 @@
 }
 
 form {
-    background-color: #aacede;
+    background-color: rgb(170, 206, 222);
     border-top-left-radius: 20%; 
-    box-shadow: 5px 5px 10px rgb(29, 29, 29);
+    box-shadow: 0.313rem 0.313rem 0.625 rgb(29, 29, 29);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 45px;
+    grid-gap: 1.25rem;
+    padding: 2.813rem;
 }
 
 form input:focus,
 textarea:focus{
-  outline: 2px solid #6bd4b1;
+  outline: 0.125rem solid rgb(107, 212, 177);
   border: none;
 }
 
 
 form input, textarea {
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 5px;
+    border: 0.063rem solid rgba(0, 0, 0, .1);
+    border-radius: 0.313rem;
     width: 100%;
 }
 
 input{
-    margin-top: 10px;
-    height: 20px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem;
+    height: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 textarea{
@@ -41,11 +41,11 @@ textarea{
 
 
 form>button{
-    background-color: white;
-    width: 90px;
+    background-color: rgb(255, 255, 255);
+    width: 5.625rem;
     transition: .2s all ease-in-out;
     border: none;
-    padding: 5px;
+    padding: 0.313rem;
     margin-top: 15%;
     margin-left: 40%;
     margin-right: 40%;
@@ -54,6 +54,6 @@ form>button{
 }
 
 form>button:hover{
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
