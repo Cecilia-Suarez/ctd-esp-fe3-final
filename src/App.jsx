@@ -13,7 +13,7 @@ function App() {
   const {theme} = useContextGlobal();
   
   return (
-    <div /*style={{background: theme.background, color: theme.font, height: "100vh"}}*/ className={theme} style={{height: "100vh"}}>
+    <div className={theme} style={{height: "100vh"}}>
       <Navbar />
       <Routes >
         <Route path='/' element={<Home />} />
